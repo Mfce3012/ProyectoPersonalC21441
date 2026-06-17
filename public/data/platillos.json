@@ -4,7 +4,7 @@
     "nombre": "Gallo Pinto",
     "categoria": "Desayuno",
     "descripcion": "El gallo pinto es el platillo más emblemático de Costa Rica. Consiste en arroz y frijoles negros salteados con cebolla, culantro y la inconfundible Salsa Lizano. Se sirve con huevo, natilla y maduro.",
-    "imagen": "https://picsum.photos/seed/gallopinto/600/400",
+    "imagen": "/images/gallo-pinto.jpg",
     "audio": "gallo-pinto.mp3",
     "ingredientes": ["Arroz blanco cocido", "Frijoles negros", "Cebolla", "Pimiento rojo", "Culantro", "Salsa Lizano"],
     "curiosidad": "Su nombre viene de la mezcla de colores del arroz y los frijoles, que recuerda al plumaje de un gallo pinto."
@@ -14,7 +14,7 @@
     "nombre": "Casado",
     "categoria": "Plato Fuerte",
     "descripcion": "El casado es el almuerzo típico costarricense por excelencia. Incluye arroz, frijoles, ensalada, plátano maduro y una proteína a elección: carne, pollo, cerdo o pescado. Es popular en sodas y restaurantes de todo el país.",
-    "imagen": "https://picsum.photos/seed/casadocr/600/400",
+    "imagen": "/images/casado.jpg",
     "audio": "casado.mp3",
     "ingredientes": ["Arroz", "Frijoles", "Ensalada", "Plátano maduro", "Proteína a elección", "Picadillo"],
     "curiosidad": "Se llama 'casado' porque era la comida que las esposas preparaban para sus maridos al mediodía."
@@ -24,7 +24,7 @@
     "nombre": "Olla de Carne",
     "categoria": "Plato Fuerte",
     "descripcion": "La olla de carne es un cocido tradicional preparado con carne de res y tubérculos como yuca, chayote, ñame, papa, plátano verde y elote. Se cocina a fuego lento y su caldo es profundamente sabroso.",
-    "imagen": "https://picsum.photos/seed/olladecarne/600/400",
+    "imagen": "/images/olla-de-carne.jpg",
     "audio": null,
     "ingredientes": ["Carne de res", "Yuca", "Chayote", "Ñame", "Papa", "Plátano verde", "Elote", "Culantro"],
     "curiosidad": "Es el plato de los domingos en familia en Costa Rica, una tradición que se ha mantenido por generaciones."
@@ -34,7 +34,7 @@
     "nombre": "Chifrijo",
     "categoria": "Antojito",
     "descripcion": "El chifrijo combina chicharrón, frijoles, arroz, pico de gallo y aguacate servido en capas. Es el antojillo más popular de Costa Rica, presente en bares y sodas de todo el país.",
-    "imagen": "https://picsum.photos/seed/chifrijo/600/400",
+    "imagen": "/images/chifrijo.jpg",
     "audio": null,
     "ingredientes": ["Chicharrón", "Frijoles", "Arroz", "Pico de gallo", "Aguacate", "Tostadas"],
     "curiosidad": "El nombre viene de unir 'chicharrón' y 'frijoles', sus dos ingredientes estrella."
@@ -44,7 +44,7 @@
     "nombre": "Tamales",
     "categoria": "Plato Fuerte",
     "descripcion": "Los tamales costarricenses son la tradición navideña por excelencia. Masa de maíz rellena de cerdo, arroz y verduras, envueltos en hojas de plátano y cocinados al vapor. Toda la familia se reúne para prepararlos.",
-    "imagen": "https://picsum.photos/seed/tamales/600/400",
+    "imagen": "/images/tamales.jpg",
     "audio": null,
     "ingredientes": ["Masa de maíz", "Cerdo", "Arroz", "Zanahoria", "Chile dulce", "Hojas de plátano"],
     "curiosidad": "Hacer tamales en diciembre se llama 'tamalada' y es una de las tradiciones familiares más queridas de Costa Rica."
@@ -54,7 +54,7 @@
     "nombre": "Chorreadas",
     "categoria": "Desayuno",
     "descripcion": "Las chorreadas son tortillas dulces de maíz tierno cocinadas en comal. Son esponjosas, ligeramente dulces y se sirven calientes con natilla o mantequilla. Un desayuno tradicional de zonas rurales.",
-    "imagen": "https://picsum.photos/seed/chorreadas/600/400",
+    "imagen": "/images/chorreadas.jpg",
     "audio": null,
     "ingredientes": ["Maíz tierno", "Azúcar", "Sal", "Mantequilla", "Natilla"],
     "curiosidad": "El nombre viene de 'chorrear' la masa sobre el comal caliente para darles su forma característica."
@@ -64,7 +64,7 @@
     "nombre": "Sopa Negra",
     "categoria": "Sopa",
     "descripcion": "La sopa negra es un platillo reconfortante y profundamente arraigado en la cultura costarricense. Frijoles negros licuados con huevo duro, culantro y chile dulce. Sencilla pero muy nutritiva.",
-    "imagen": "https://picsum.photos/seed/sopanegra/600/400",
+    "imagen": "/images/sopa-negra.jpg",
     "audio": "sopa-negra.mp3",
     "ingredientes": ["Frijoles negros", "Huevo duro", "Culantro", "Cebolla", "Chile dulce", "Natilla"],
     "curiosidad": "Se considera el plato del 'alma' tica: se sirve en momentos de tristeza, enfermedad y celebración por igual."
@@ -74,7 +74,7 @@
     "nombre": "Tres Leches",
     "categoria": "Postre",
     "descripcion": "Bizcocho esponjoso empapado en leche condensada, leche evaporada y crema de leche. Decorado con merengue, es el postre más popular de Costa Rica en celebraciones y cumpleaños.",
-    "imagen": "https://picsum.photos/seed/tresleches/600/400",
+    "imagen": "/images/tres-leches.jpg",
     "audio": null,
     "ingredientes": ["Bizcocho", "Leche condensada", "Leche evaporada", "Crema de leche", "Merengue"],
     "curiosidad": "Es el postre estrella de celebraciones costarricenses y su receta pasa de generación en generación."
@@ -84,7 +84,7 @@
     "nombre": "Arroz con Leche",
     "categoria": "Postre",
     "descripcion": "Postre cremoso elaborado con arroz, leche, azúcar y canela. Se sirve tibio o frío y es uno de los postres más tradicionales de la gastronomía costarricense, frecuentemente acompañado de galletas de soda.",
-    "imagen": "https://picsum.photos/seed/arrozleche/600/400",
+    "imagen": "/images/arroz-con-leche.jpg",
     "audio": null,
     "ingredientes": ["Arroz", "Leche", "Azúcar", "Canela", "Vainilla", "Ralladura de limón"],
     "curiosidad": "Es el postre del domingo en muchos hogares costarricenses, símbolo de reunión familiar."
@@ -94,7 +94,7 @@
     "nombre": "Horchata",
     "categoria": "Bebida",
     "descripcion": "Bebida fresca preparada con arroz molido, canela, vainilla y azúcar. La versión tica tiene un sabor suave y especiado muy característico, servida con abundante hielo especialmente en zonas calurosas.",
-    "imagen": "https://picsum.photos/seed/horchata/600/400",
+    "imagen": "/images/horchata.jpg",
     "audio": null,
     "ingredientes": ["Arroz", "Canela", "Vainilla", "Azúcar", "Agua", "Hielo"],
     "curiosidad": "En Guanacaste la horchata es especialmente popular por el calor, y se vende en sodas en vasos grandes con hielo."
@@ -104,7 +104,7 @@
     "nombre": "Agua Dulce",
     "categoria": "Bebida",
     "descripcion": "La bebida caliente más tradicional de Costa Rica. Se prepara disolviendo tapa de dulce en agua caliente o leche. Acompañamiento perfecto del desayuno, especialmente en zonas frías y madrugadas de campo.",
-    "imagen": "https://picsum.photos/seed/aguadulce/600/400",
+    "imagen": "/images/agua-dulce.jpg",
     "audio": null,
     "ingredientes": ["Tapa de dulce", "Agua caliente o leche"],
     "curiosidad": "La tapa de dulce es azúcar de caña sin refinar. Fue durante siglos el desayuno de agricultores y campesinos costarricenses."
@@ -114,7 +114,7 @@
     "nombre": "Picadillo de Arracache",
     "categoria": "Plato Fuerte",
     "descripcion": "Uno de los picadillos más queridos de la cocina tica. El arracache se pica fino y se saltea con carne molida, cebolla y especias. Se sirve como guarnición del casado o con tortillas.",
-    "imagen": "https://picsum.photos/seed/picadillo/600/400",
+    "imagen": "/images/picadillo.jpg",
     "audio": null,
     "ingredientes": ["Arracache", "Carne molida", "Cebolla", "Ajo", "Chile dulce", "Culantro"],
     "curiosidad": "El arracache es un tubérculo originario de los Andes que se adaptó perfectamente a la cocina costarricense."
