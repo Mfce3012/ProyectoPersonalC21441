@@ -1,12 +1,13 @@
 <template>
   <div id="app" :class="{ 'modo-oscuro': modoOscuro }">
-
     <NavBar :modoOscuro="modoOscuro" @toggleModo="modoOscuro = !modoOscuro" />
 
     <main class="contenedor">
       <header class="encabezado">
         <h1 class="titulo-principal">Gastronomía Típica Costarricense</h1>
-        <p class="subtitulo">Descubrí los sabores que definen nuestra identidad</p>
+        <p class="subtitulo">
+          Descubrí los sabores que definen nuestra identidad
+        </p>
       </header>
 
       <SearchBar
@@ -16,10 +17,16 @@
         @cambiarCategoria="categoriaActiva = $event"
       />
 
-      <p class="resultado-count">{{ platillosFiltrados.length }} platillos encontrados</p>
+      <p class="resultado-count">
+        {{ platillosFiltrados.length }} platillos encontrados
+      </p>
 
       <Transition name="fade" mode="out-in">
-        <div v-if="platillosFiltrados.length > 0" :key="categoriaActiva + busqueda" class="grilla">
+        <div
+          v-if="platillosFiltrados.length > 0"
+          :key="categoriaActiva + busqueda"
+          class="grilla"
+        >
           <EntradaCard
             v-for="platillo in platillosFiltrados"
             :key="platillo.id"
@@ -31,67 +38,73 @@
       <p v-if="platillosFiltrados.length === 0" class="sin-resultados">
         No se encontraron platillos. Intentá con otro término. 🤷
       </p>
-
     </main>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
-import NavBar from './components/NavBar.vue'
-import SearchBar from './components/SearchBar.vue'
-import EntradaCard from './components/EntradaCard.vue'
+import { ref, computed, onMounted, watch } from "vue";
+import NavBar from "./components/NavBar.vue";
+import SearchBar from "./components/SearchBar.vue";
+import EntradaCard from "./components/EntradaCard.vue";
 
-const platillos       = ref([])
-const busqueda        = ref('')
-const categoriaActiva = ref('Todas')
-const modoOscuro      = ref(false)
+const platillos = ref([]);
+const busqueda = ref("");
+const categoriaActiva = ref("Todas");
+const modoOscuro = ref(false);
 
-const categorias = ['Todas', 'Desayuno', 'Plato Fuerte', 'Antojito', 'Sopa', 'Postre', 'Bebida']
+const categorias = [
+  "Todas",
+  "Desayuno",
+  "Plato Fuerte",
+  "Antojito",
+  "Sopa",
+  "Postre",
+  "Bebida",
+];
 
 const platillosFiltrados = computed(() => {
-  return platillos.value.filter(p => {
-    const textoBusqueda = busqueda.value.toLowerCase()
-    const coincideTexto =
-      p.nombre.toLowerCase().includes(textoBusqueda) ||
-      p.descripcion.toLowerCase().includes(textoBusqueda)
+  return platillos.value.filter((p) => {
+    const textoBusqueda = busqueda.value.toLowerCase();
+    const coincideTexto = p.nombre.toLowerCase().includes(textoBusqueda);
     const coincideCategoria =
-      categoriaActiva.value === 'Todas' || p.categoria === categoriaActiva.value
-    return coincideTexto && coincideCategoria
-  })
-})
+      categoriaActiva.value === "Todas" ||
+      p.categoria === categoriaActiva.value;
+    return coincideTexto && coincideCategoria;
+  });
+});
 
 onMounted(async () => {
-  const res = await fetch('/data/platillos.json')
-  platillos.value = await res.json()
-})
+  const res = await fetch("/data/platillos.json");
+  platillos.value = await res.json();
+});
 
 watch(busqueda, (nuevoValor) => {
   if (nuevoValor.length > 0) {
-    categoriaActiva.value = 'Todas'
+    categoriaActiva.value = "Todas";
   }
-})
+});
 </script>
 
 <style>
 :root {
-  --fondo:          #f5f0e8;
-  --fondo-card:     #ffffff;
-  --texto:          #2c1810;
-  --texto-suave:    #6b4c3b;
-  --primario:       #8B4513;
+  --fondo: #f5f0e8;
+  --fondo-card: #ffffff;
+  --texto: #2c1810;
+  --texto-suave: #6b4c3b;
+  --primario: #8b4513;
   --primario-hover: #6b340f;
-  --borde:          #e0d5c8;
+  --borde: #e0d5c8;
 }
 
 .modo-oscuro {
-  --fondo:          #1a0e0a;
-  --fondo-card:     #2a1810;
-  --texto:          #f0e6d3;
-  --texto-suave:    #c4956a;
-  --primario:       #D2691E;
+  --fondo: #1a0e0a;
+  --fondo-card: #2a1810;
+  --texto: #f0e6d3;
+  --texto-suave: #c4956a;
+  --primario: #d2691e;
   --primario-hover: #e07825;
-  --borde:          #3d2415;
+  --borde: #3d2415;
 }
 
 * {
@@ -101,14 +114,16 @@ watch(busqueda, (nuevoValor) => {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #app {
   min-height: 100vh;
   background: var(--fondo);
   color: var(--texto);
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .contenedor {
@@ -165,7 +180,11 @@ body {
 }
 
 @media (max-width: 600px) {
-  .titulo-principal { font-size: 1.7rem; }
-  .grilla { grid-template-columns: 1fr; }
+  .titulo-principal {
+    font-size: 1.7rem;
+  }
+  .grilla {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
