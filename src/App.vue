@@ -18,41 +18,45 @@
 
       <p class="resultado-count">{{ platillosFiltrados.length }} platillos encontrados</p>
 
-      <div v-if="platillosFiltrados.length > 0" class="grilla">
-        <EntradaCard
-          v-for="platillo in platillosFiltrados"
-          :key="platillo.id"
-          :platillo="platillo"
-        />
-      </div>
+      <Transition name="fade" mode="out-in">
+        <div v-if="platillosFiltrados.length > 0" :key="categoriaActiva + busqueda" class="grilla">
+          <EntradaCard
+            v-for="platillo in platillosFiltrados"
+            :key="platillo.id"
+            :platillo="platillo"
+          />
+        </div>
+      </Transition>
 
-      <p v-else class="sin-resultados">
+      <p v-if="platillosFiltrados.length === 0" class="sin-resultados">
         No se encontraron platillos. Intentá con otro término. 🤷
       </p>
-    </main>
 
+    </main>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import EntradaCard from './components/EntradaCard.vue'
 
-const platillos      = ref([])
-const busqueda       = ref('')
+const platillos       = ref([])
+const busqueda        = ref('')
 const categoriaActiva = ref('Todas')
-const modoOscuro     = ref(false)
+const modoOscuro      = ref(false)
 
 const categorias = ['Todas', 'Desayuno', 'Plato Fuerte', 'Antojito', 'Sopa', 'Postre', 'Bebida']
 
 const platillosFiltrados = computed(() => {
   return platillos.value.filter(p => {
     const textoBusqueda = busqueda.value.toLowerCase()
-    const coincideTexto = p.nombre.toLowerCase().includes(textoBusqueda) ||
-                          p.descripcion.toLowerCase().includes(textoBusqueda)
-    const coincideCategoria = categoriaActiva.value === 'Todas' || p.categoria === categoriaActiva.value
+    const coincideTexto =
+      p.nombre.toLowerCase().includes(textoBusqueda) ||
+      p.descripcion.toLowerCase().includes(textoBusqueda)
+    const coincideCategoria =
+      categoriaActiva.value === 'Todas' || p.categoria === categoriaActiva.value
     return coincideTexto && coincideCategoria
   })
 })
@@ -61,27 +65,33 @@ onMounted(async () => {
   const res = await fetch('/data/platillos.json')
   platillos.value = await res.json()
 })
+
+watch(busqueda, (nuevoValor) => {
+  if (nuevoValor.length > 0) {
+    categoriaActiva.value = 'Todas'
+  }
+})
 </script>
 
 <style>
 :root {
-  --fondo:        #f5f0e8;
-  --fondo-card:   #ffffff;
-  --texto:        #2c1810;
-  --texto-suave:  #6b4c3b;
-  --primario:     #8B4513;
+  --fondo:          #f5f0e8;
+  --fondo-card:     #ffffff;
+  --texto:          #2c1810;
+  --texto-suave:    #6b4c3b;
+  --primario:       #8B4513;
   --primario-hover: #6b340f;
-  --borde:        #e0d5c8;
+  --borde:          #e0d5c8;
 }
 
 .modo-oscuro {
-  --fondo:        #1a0e0a;
-  --fondo-card:   #2a1810;
-  --texto:        #f0e6d3;
-  --texto-suave:  #c4956a;
-  --primario:     #D2691E;
+  --fondo:          #1a0e0a;
+  --fondo-card:     #2a1810;
+  --texto:          #f0e6d3;
+  --texto-suave:    #c4956a;
+  --primario:       #D2691E;
   --primario-hover: #e07825;
-  --borde:        #3d2415;
+  --borde:          #3d2415;
 }
 
 * {
@@ -141,6 +151,16 @@ body {
   font-size: 1.2rem;
   color: var(--texto-suave);
   margin-top: 3rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 @media (max-width: 600px) {
