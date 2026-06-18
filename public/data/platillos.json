@@ -65,7 +65,7 @@
     "categoria": "Sopa",
     "descripcion": "La sopa negra es un platillo reconfortante y profundamente arraigado en la cultura costarricense. Frijoles negros licuados con huevo duro, culantro y chile dulce. Sencilla pero muy nutritiva.",
     "imagen": "/images/sopa-negra.jpg",
-    "audio": "sopa-negra.mp3",
+    "audio": null,
     "ingredientes": ["Frijoles negros", "Huevo duro", "Culantro", "Cebolla", "Chile dulce", "Natilla"],
     "curiosidad": "Se considera el plato del 'alma' tica: se sirve en momentos de tristeza, enfermedad y celebración por igual."
   },
@@ -105,7 +105,7 @@
     "categoria": "Bebida",
     "descripcion": "La bebida caliente más tradicional de Costa Rica. Se prepara disolviendo tapa de dulce en agua caliente o leche. Acompañamiento perfecto del desayuno, especialmente en zonas frías y madrugadas de campo.",
     "imagen": "/images/agua-dulce.jpg",
-    "audio": null,
+    "audio": "agua-dulce.mp3",
     "ingredientes": ["Tapa de dulce", "Agua caliente o leche"],
     "curiosidad": "La tapa de dulce es azúcar de caña sin refinar. Fue durante siglos el desayuno de agricultores y campesinos costarricenses."
   },
