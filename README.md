@@ -1,4 +1,4 @@
-# 🍛 Enciclopedia Gastronómica Costarricense
+# Enciclopedia Gastronómica Costarricense
 
 Aplicación web multimedia desarrollada como proyecto personal del curso **IF7102 Multimedios**, I Ciclo 2026, Universidad de Costa Rica — Sede de Guanacaste.
 
@@ -85,17 +85,16 @@ public/
 
 ## Capturas de pantalla
  ### Sitio completo 
-
+<img width="1918" height="1026" alt="imagen" src="https://github.com/user-attachments/assets/54b113ff-ceaa-42e7-a9c7-af333236b002" />
 
 ### Despliegue de información 
-
+<img width="558" height="952" alt="imagen" src="https://github.com/user-attachments/assets/e49fe01a-db5e-4df5-92c4-2307b4528047" />
 
 ### Filtro
-
+<img width="1368" height="933" alt="imagen" src="https://github.com/user-attachments/assets/4131d3c9-24c5-4992-9877-b2f6cfa55037" />
 
 ### Busqueda 
-
-
+<img width="1546" height="835" alt="imagen" src="https://github.com/user-attachments/assets/687825e9-9b56-4185-8f11-0d693f04f427" />
 
 ---
 
