@@ -5,7 +5,7 @@
 
     <main class="contenedor">
       <header class="encabezado">
-        <h1 class="titulo-principal">🍛 Gastronomía Típica Costarricense</h1>
+        <h1 class="titulo-principal">Gastronomía Típica Costarricense</h1>
         <p class="subtitulo">Descubrí los sabores que definen nuestra identidad</p>
       </header>
 
@@ -144,6 +144,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
+  align-items: start;
 }
 
 .sin-resultados {

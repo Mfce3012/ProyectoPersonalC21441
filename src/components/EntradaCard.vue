@@ -11,19 +11,19 @@
       <div v-if="expandida" class="card-extra" @click.stop>
 
         <div class="ingredientes">
-          <h3>🧅 Ingredientes</h3>
+          <h3>Ingredientes</h3>
           <ul>
             <li v-for="ing in platillo.ingredientes" :key="ing">{{ ing }}</li>
           </ul>
         </div>
 
         <div class="curiosidad">
-          <h3>💡 ¿Sabías que...?</h3>
+          <h3>¿Sabías que...?</h3>
           <p>{{ platillo.curiosidad }}</p>
         </div>
 
         <div v-if="platillo.audio" class="audio-seccion">
-          <h3>🔊 Narración</h3>
+          <h3>Narración</h3>
           <AudioPlayer :archivo="platillo.audio" />
         </div>
 

@@ -3,7 +3,7 @@
     <div class="navbar-contenido">
 
       <div class="navbar-marca">
-        <span class="navbar-icono">🍽️</span>
+        <span class="navbar-icono"></span>
         <span class="navbar-titulo">Gastro CR</span>
       </div>
 
