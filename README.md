@@ -27,13 +27,10 @@ Enciclopedia interactiva con 12 platillos típicos de la gastronomía costarrice
 ---
 
 ## Componentes Vue
-
-| Componente | Descripción |
-
-| `NavBar.vue` | Barra de navegación con toggle de modo oscuro |
-| `SearchBar.vue` | Buscador y botones de filtro por categoría |
-| `EntradaCard.vue` | Tarjeta expandible de cada platillo |
-| `AudioPlayer.vue` | Reproductor de audio con barra de progreso |
+`NavBar.vue` | Barra de navegación con toggle de modo oscuro
+`SearchBar.vue` | Buscador y botones de filtro por categoría 
+`EntradaCard.vue` | Tarjeta expandible de cada platillo 
+`AudioPlayer.vue` | Reproductor de audio con barra de progreso 
 
 ---
 
