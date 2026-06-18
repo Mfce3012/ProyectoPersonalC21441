@@ -1,38 +1,104 @@
-# enciclopedia-gastronomica-crC21441
+# 🍛 Enciclopedia Gastronómica Costarricense
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicación web multimedia desarrollada como proyecto personal del curso **IF7102 Multimedios**, I Ciclo 2026, Universidad de Costa Rica — Sede de Guanacaste.
 
-## Recommended IDE Setup
+**Estudiante:** María Félix Cabezas Espinoza
+**Carné:** C21441  
+**Framework:** Vue 3 con Vite  
+**Opción:** Opción 4 — Enciclopedia Temática Interactiva
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## Descripción
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Enciclopedia interactiva con 12 platillos típicos de la gastronomía costarricense. Permite explorar, buscar y filtrar entradas por categoría, con información detallada, ingredientes, curiosidades y narración en audio para tres platillos.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Funcionalidades
 
-## Project Setup
+- Búsqueda en tiempo real por nombre o descripción
+- Filtros por categoría (Desayuno, Plato Fuerte, Antojito, Sopa, Postre, Bebida)
+- Modo oscuro / modo claro
+- Reproductor de audio integrado en 3 entradas
+- Diseño responsivo para escritorio y móvil
+- Transiciones animadas al filtrar
 
-```sh
+---
+
+## Componentes Vue
+
+| Componente | Descripción |
+
+| `NavBar.vue` | Barra de navegación con toggle de modo oscuro |
+| `SearchBar.vue` | Buscador y botones de filtro por categoría |
+| `EntradaCard.vue` | Tarjeta expandible de cada platillo |
+| `AudioPlayer.vue` | Reproductor de audio con barra de progreso |
+
+---
+
+## Características técnicas de Vue 3
+
+- `ref` y `computed` para reactividad
+- `onMounted` para carga de datos con `fetch()`
+- `watch` para sincronizar búsqueda y categoría
+- `defineProps` y `defineEmits` en todos los componentes
+- `v-for`, `v-if`, `v-model` y `:class` bindings
+- `<Transition>` para animaciones de filtrado
+- CSS variables para theming de modo oscuro
+
+---
+
+## Cómo ejecutar el proyecto
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Luego abrí http://localhost:5173 en el navegador.
 
-```sh
-npm run build
+---
+
+## Estructura del proyecto
+
 ```
+src/
+├── components/
+│   ├── NavBar.vue
+│   ├── SearchBar.vue
+│   ├── EntradaCard.vue
+│   └── AudioPlayer.vue
+├── App.vue
+└── main.js
+
+public/
+├── data/
+│   └── platillos.json
+├── images/
+│   └── (12 imágenes de platillos)
+└── audio/
+    └── (3 archivos de narración)
+```
+
+---
+
+## Capturas de pantalla
+ ### Sitio completo 
+
+
+### Despliegue de información 
+
+
+### Filtro
+
+
+### Busqueda 
+
+
+
+---
+
+## Referencias
+
+Ver [REFERENCIAS.md](./REFERENCIAS.md) para la lista completa de recursos consultados.
