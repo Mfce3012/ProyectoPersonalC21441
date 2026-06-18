@@ -62,16 +62,27 @@ Licencia: https://www.pexels.com/es-es/license/
 Platillo | Fotógrafo | URL |
 
 Gallo Pinto | Snappr | https://www.pexels.com/es-es/foto/comida-plato-sano-restaurante-27556972/
+
 Casado | Nano Erdozain | https://www.pexels.com/es-es/foto/29450673/
+
 Olla de Carne | Arief Setiawan| https://www.pexels.com/es-es/foto/comida-vegetales-verduras-cena-10066715/
+
 Chifrijo | Roger Garcia | [https://www.pexels.com/... |](https://www.pexels.com/es-es/foto/oscuro-nachos-bol-tazon-10051775/)
+
 Tamales | Firman Marek_Brew | [https://www.pexels.com/... |](https://www.pexels.com/es-es/foto/delicioso-aperitivo-envuelto-en-hojas-sobre-plato-de-cristal-36866905/)
+
 Chorreadas | ClickerHappy | [https://www.pexels.com/... |](https://www.pexels.com/es-es/foto/cocinando-comer-comida-crepe-730922/)
+
 Sopa Negra | Nadin Sh| https://www.pexels.com/es-es/foto/pan-comida-bol-tazon-18469442/
+
 Tres Leches | Nano Erdozain | https://www.pexels.com/es-es/foto/deliciosa-rebanada-de-pastel-tres-leches-32590852/
+
 Arroz con Leche | Samet Kaplan | https://www.pexels.com/es-es/foto/sutlac-turco-tradicional-en-recipiente-de-vidrio-37825038/
+
 Horchata | Israyosoy S.| https://www.pexels.com/es-es/foto/horchata-tradicional-mexicana-con-palitos-de-canela-34566510/
+
 Agua Dulce | Julia Filirovska| https://www.pexels.com/es-es/foto/cafeina-cafe-taza-copa-8249147/
+
 Picadillo | Salim Da | https://www.pexels.com/es-es/foto/34507780/
 
 ### Audio (producción propia)
